@@ -1,6 +1,7 @@
 #include "kai/lang/pi/pi-tokeniser.h"
 #include <cctype>
 #include <stdexcept>
+#include <string>
 
 Tokenizer::Tokenizer(const std::string &input)
     : input_(input), position_(0), line_(1), column_(1) {}

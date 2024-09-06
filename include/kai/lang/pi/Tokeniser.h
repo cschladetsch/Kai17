@@ -1,8 +1,9 @@
-#ifndef SIMPLE_TOKENIZER_H
-#define SIMPLE_TOKENIZER_H
+#pragma once
 
-#include </usr/lib/llvm-10/include/c++/v1/string>
+#include <string>
 #include <vector>
+
+#include "kai/lang/pi/Token.h"
 
 class Tokenizer {
 public:
@@ -29,5 +30,3 @@ private:
   bool isAlpha(char c) const;
   bool isAlphaNumeric(char c) const;
 };
-
-#endif // SIMPLE_TOKENIZER_H
