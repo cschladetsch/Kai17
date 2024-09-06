@@ -4,13 +4,14 @@ def Settings( **kwargs ):
             '-Wall',
             '-Wextra',
             '-Werror',
-            '-x', 
-			'c++',
-            '-std=c++17',
-
+            '-x', 'c++',
+            '-std=c++11',
+            # Add paths to header files
             '-I', '.',
             '-I', './include',
-            '-I', '/usr/include',
+            '-I', './usr/lib/llvm-10/include/c++/v1/',
+
+            # Add more flags as needed
         ],
     }
 
